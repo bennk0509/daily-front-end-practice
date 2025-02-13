@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Powered Tools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            position: relative;
+            min-height: 120px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .card::before {
+            content: "";
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .red::before { background-color: red; }
+        .blue::before { background-color: blue; }
+        .orange::before { background-color: orange; }
+        .teal::before { background-color: teal; }
+
+        @media (max-width: 600px) {
+            .card-container {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Reliable, efficient delivery</h1>
+        <h2>Powered by Technology</h2>
+        <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+
+        <div class="card-container">
+            <div class="card teal">
+                <h3>Supervisor</h3>
+                <p>Monitors activity to identify project roadblocks</p>
+            </div>
+            <div class="card red">
+                <h3>Team Builder</h3>
+                <p>Scans our talent network to create the optimal team for your project</p>
+            </div>
+            <div class="card blue">
+                <h3>Calculator</h3>
+                <p>Uses data from past projects to provide better delivery estimates</p>
+            </div>
+            <div class="card orange">
+                <h3>Karma</h3>
+                <p>Regularly evaluates our talent to ensure quality</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
