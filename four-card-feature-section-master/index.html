@@ -13,93 +13,95 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body{
-      background:  hsl(0, 0%, 98%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       font-size: 15px;
       font-family: "Poppins";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: hsl(0, 0%, 98%);
       padding: 20px;
     }
     .head-article{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin: 50px 0;
-      gap: 5px;
-      max-width: 310px;
+      align-items: flex-start;
+      font-size: 1rem;
       text-align: center;
+      max-width: 310px; 
+      margin-bottom: 50px;
     }
     .head-article1{
-      font-size: 25px;
+      font-size: 1.5em;
+      margin-bottom: 0px;
+      margin-top: 80px;
       font-weight: 200;
-      margin: 0px;
-      padding: 0;
     }
     .head-article2{
-      font-size: 25px;
+      margin: 0;
+      font-size: 1.5em;
       font-weight: 600;
-      margin: 0px;
     }
     .head-descript{
+      font-size: 1em;
       font-weight: 200;
-      margin: 0px;
-      line-height: 25px;
+      margin: 10px 0;
+      color: hsl(229, 6%, 66%);
     }
-    .container-section, .container-team-karma
-    {
+    .container-section, .container-team-karma{
       display: flex;
       flex-direction: column;
-      gap: 30px;
       justify-content: center;
       align-items: center;
+      gap: 30px;
     }
     .container{
-      max-width: 300px;
-      background: white;
-      border-radius: 10px;
+      font-size: 1rem;
+      max-width: 310px;
+      background-color: white;
       padding: 20px;
-      box-shadow: 20px 20px 30px -30px hsl(234, 12%, 34%);
-      /* filter: drop-shadow(5px 5px 20px -20px hsl(234, 12%, 34%)); */
+      border-radius: 20px;
+      box-shadow: 0px 10px 50px -30px hsl(234, 12%, 34%);
+    }
+    .head-section{
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    .descrip-section{
+      margin: 10px 0px 30px 0px;
+      color: hsl(229, 6%, 66%);
+    }
+    .img-section{
+      float: right;
     }
     .supervisor{
       border-top: 4px solid hsl(180, 62%, 55%);
     }
     .teambuilder{
-      border-top: 5px solid hsl(0, 78%, 62%);
+      border-top: 4px solid hsl(0, 78%, 62%);
     }
     .karma{
-      border-top: 5px solid  hsl(34, 97%, 64%);
+      border-top: 4px solid hsl(34, 97%, 64%);
     }
     .calculator{
-      border-top: 5px solid hsl(212, 86%, 64%);
+      border-top: 4px solid hsl(212, 86%, 64%);
     }
-    .head-section{
-      margin: 0px;
-      font-size: 20px;
-      font-weight: 600;
-    }
-    .descrip-section{
-      margin: 10px 0;
-      color:  hsl(229, 6%, 66%);
-      margin-bottom: 30px;
-    }
-    .img-section{
-      float: right;
-    }
-    @media(min-width:400px)
-    { 
-      .container-section{
-        flex-direction: row;
+    @media(min-width: 480px)
+    {
+      .container-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
       }
-      .head-article{
-        max-width: 25vw;
+
+      .container-team-karma {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
@@ -113,24 +115,24 @@
     <div class="container supervisor">
       <h3 class="head-section">Supervisor</h3>
       <p class="descrip-section">Monitors activity to identify project roadblocks</p>
-      <img class="img-section" src="/images/icon-supervisor.svg">
+      <img class="img-section" src="/four-card-feature-section-master/images/icon-supervisor.svg">
     </div>
     <div class="container-team-karma">
       <div class="container teambuilder">
         <h3 class="head-section">Team Builder</h3>
         <p class="descrip-section">Scans our talent network to create the optimal team for your project</p>
-        <img class="img-section" src="/images/icon-team-builder.svg">
+        <img class="img-section" src="/four-card-feature-section-master/images/icon-team-builder.svg">
       </div>
       <div class="container karma">
         <h3 class="head-section">Karma</h3>
         <p class="descrip-section">Regularly evaluates our talent to ensure quality</p>
-        <img class="img-section" src="/images/icon-karma.svg">
+        <img class="img-section" src="/four-card-feature-section-master/images/icon-karma.svg">
       </div>
     </div>
     <div class = "container calculator">
       <h3 class="head-section">Calculator</h3>
       <p class="descrip-section">Uses data from past projects to provide better delivery estimates</p>
-      <img class="img-section" src="/images/icon-calculator.svg">
+      <img class="img-section" src="/four-card-feature-section-master/images/icon-calculator.svg">
     </div>
   </div>
   
