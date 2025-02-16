@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Article preview component</title>
+
+  <script src="./main.js"></script> <!-- Load your JavaScript file here -->
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+  <link href="./styles.css" rel="stylesheet" />
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a {color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <div class="img-box">
+      <img class="card-image" src="/article-preview-component-master/images/drawers.jpg">
+    </div>
+    <div class="article-content">
+      <a href="#">
+        <h3 class="title">Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home</h3>
+      </a>
+
+      <p class="article-text">
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </p>
+      <div class="article-content-footer">
+        <div class="author">
+          <img class="avt" src="/article-preview-component-master/images/avatar-michelle.jpg">
+          <div class="author-information">
+            <p class="author-name">Michelle Appleton</p>
+            <p class="date">28 Jun 2020</p>
+          </div>
+        </div>
+        <div class="share-container">
+          <button class="share">
+            <img class="share-button" src="/article-preview-component-master/images/icon-share.svg">
+          </button>
+          <div class="share-option">
+            <div class="nothing"></div>
+            <span>Share</span>
+            <a class="link" href="#"><img name="logo-fb" src="/article-preview-component-master/images/icon-facebook.svg"></a>
+            <a class="link" href="#"><img name="logo-tw" src="/article-preview-component-master/images/icon-twitter.svg"></a>
+            <a class="link" href="#"><img name="logo-pinterest" src="/article-preview-component-master/images/icon-pinterest.svg"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script>
+    const shareOption = document.querySelector(".share-option");
+    document.querySelector(".share").addEventListener("click",function(){
+      this.classList.toggle("active");
+      shareOption.classList.toggle("active");
+    })
+  </script>
+</body>
+</html>
